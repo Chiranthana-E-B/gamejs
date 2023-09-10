@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-PRrgQVJ8NNHGieOA1grGdCTIt4h21CzJs6SnWH4YMQ6G5F5+IEzOHz67L4SQaF0o" crossorigin="anonymous">
+  <title>Gamejs</title>
+</head>
+
+<body>
+
+  <div class="container bg-light text-center">
+    <h2 id="header1">Simple Maths Game</h2>
+  </div>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-xs-6 col-sm-6">
+        <div class="container pd-0 p-1 col-lg-3 ">
+          <form id="reset1">
+
+            <div class="container bg-light card-body text-center">
+              <h2 id="val1">Start</h2>
+            </div>
+            <div class="container bg-light card-body text-center">
+              <h2 id="val2">Start</h2>
+            </div>
+
+            <div class="container bg-light card-body text-center"><input class="form-control input-sm" type="number" id="val3" placeholder="Enter Sum"> <div>Time left = <span id="timer"></span></div> </div>
+
+            <div class="container card-body text-center"><h2></h2><button type="button" class="btn btn-danger" onclick="close1()" title="Close"> Close</button>
+              <button type="button" class="btn btn-primary" onclick="save1()" title="Save"> Save </button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container pd-0 p-5 col-lg-2">
+    <form id="reset2">
+      <div class="container bg-warning card-body text-center"><input class="form-control input-sm" type="text"
+          id="user1" placeholder="Your Name"></div>
+      <div class="container bg-light card-body text-center">
+        <h2 id="user2">Score</h2>
+      </div>
+      <div class="text-center"><button type="button" class="btn btn-primary" onclick="start1()" title="Start">Click
+          Start</button></div>
+    </form>
+  </div>
+
+  <div class="col-xs-6 col-sm-6">
+    <div>
+      <h3>Instructions</h3>
+      <ul>
+        <li>Enter your name first</li>
+        <li>Click start button</li>
+        <li>Enter sum of two numbers</li>
+        <li>Click save button</li>
+        <li>Click close button to back</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
